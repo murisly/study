@@ -32,11 +32,11 @@ AppAsset::register($this);
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a href="#" class="navbar-brand">台风1</a>
+        <a href="#" class="navbar-brand">主页</a>
     </div>
     <div class="collapse navbar-collapse" id="1">
         <ul class="nav navbar-nav">
-            <li class="active"><a data-toggle="tab" href="#">1</a></li>
+            <li class="active"><a data-toggle="tab" href="#">html</a></li>
             <li><a href="#" data-toggle="tab">2</a></li>
             <li><a href="#" data-toggle="tab">3</a></li>
             <li <?if(Yii::$app->controller->module->id == 'forum'):?>class="active"<?endif?>><a href="<?=\yii\helpers\Url::to(['/forum'])?>">forum</a></li>
