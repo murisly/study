@@ -145,7 +145,6 @@ class SiteController extends Controller
     }
 
     public function actionFont() {
-        var_dump("123");
         return $this->renderPartial("font.html");
     }
 
