@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>input示例</title>
-    <base href="http://study.shenman.site" />
+    <base href="http://localhost/study/web/index.php/" />
 </head>
 <body bgcolor="#bbbbbb" text='#ffffff'>
     <center>
@@ -10,20 +10,26 @@
     </center>
 
     <div>
-        <form action="/site/show" method="get">
+        <form action="site/show" method="get">
             单行文本: <input id="username" name="username" type="text"></input><br>
             不能编辑的文本：<input id="username2" name="username2" type="text" readonly="readonly" value="readonly"></input><br>
             密码框：<input id="password" name="password" type="password"></input><br>
             隐藏域：<input id="hide" name="hide" type="hidden"></input><br>
             颜色选择单选框
-            <input id="color1" name="color1" type="radio" value="green"></input>
-            <input id="color2" name="color2" type="radio" value="blue"></input>
-            <input id="color3" name="color3" type="radio" value="red"></input><br>
+            <input id="color1" name="color" type="radio" value="green"></input>
+            <input id="color2" name="color" type="radio" value="blue"></input>
+            <input id="color3" name="color" type="radio" value="red"></input><br>
             复选框：
-            <input id="website" name="website" type="checkbox" value="/images/water.png"></input><br>
+            <input id="website1" name="website1" type="checkbox" value="red" />
+            <input id="website2" name="website2" type="checkbox" value="green" /><br />
+
+            图像域：<input type="image" src="/images/hehua.jpg" alt="荷花"/><br />
 
             提交按钮：
-            <input id="ok" name="ok" type="submit" value="提交"></input>
+            <input id="ok" name="ok" type="submit" value="提交" />
+            <input id="dis" name="dis" type="submit" value="提交"disabled="disabled" />
+            <input id="cancel" name="cancel" type="reset" value="重填"/>
+            <input id="no" name="no" type="button" value="无动作" />
         </form>
     </div>
 

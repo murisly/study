@@ -161,4 +161,8 @@ class SiteController extends Controller
     public function actionTable() {
         return $this->renderPartial('table.html');
     }
+
+    public function actionForm() {
+        return $this->renderPartial('form.html');
+    }
 }
