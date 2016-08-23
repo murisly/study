@@ -153,4 +153,8 @@ class SiteController extends Controller
     public function actionInput() {
         return $this->renderPartial("input.html");
     }
+
+    public function actionJs() {
+        return $this->renderPartial('js.html');
+    }
 }

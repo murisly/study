@@ -10,4 +10,5 @@ $this->title = 'My Study';
     <div><a href="http:\\study.shenman.site\site\link">链接</a></div><br>
     <div><a href="http:\\study.shenman.site\site\image">图片</a></div><br>
     <div><a href="http:\\study.shenman.site\site\input">表单</a></div><br>
+    <div><a href="http:\\study.shenman.site\site\js">js</a></div><br>
 </div>
