@@ -92,11 +92,6 @@ class SiteController extends Controller
         }
     }
 
-    public function actionShow() {
-        return "show";
-    }
-
-
     public function actionEntryTest() {
         $model = new EntryForm(['scenario' => 'register']);
         $model['name'] = "jam";
@@ -136,6 +131,13 @@ class SiteController extends Controller
         return $item->population;
     }
 
+    public function actionShow() {
+        return $this->render("show", [
+            'get' => ($_GET),
+            'post'=> ($_POST),
+            ]);
+    }
+
     public function actionImage() {
         return $this->renderPartial("image.html");
     }
@@ -148,4 +150,7 @@ class SiteController extends Controller
         return $this->renderPartial("font.html");
     }
 
+    public function actionInput() {
+        return $this->renderPartial("input.html");
+    }
 }

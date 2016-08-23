@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>input示例</title>
+    <base href="http://study.shenman.site" />
+</head>
+<body bgcolor="#bbbbbb" text='#ffffff'>
+    <center>
+        <h1>input示例</h1>
+    </center>
+
+    <div>
+        <form action="/site/show" method="get">
+            单行文本: <input id="username" name="username" type="text"></input><br>
+            不能编辑的文本：<input id="username2" name="username2" type="text" readonly="readonly" value="readonly"></input><br>
+            密码框：<input id="password" name="password" type="password"></input><br>
+            隐藏域：<input id="hide" name="hide" type="hidden"></input><br>
+            颜色选择单选框
+            <input id="color1" name="color1" type="radio" value="green"></input>
+            <input id="color2" name="color2" type="radio" value="blue"></input>
+            <input id="color3" name="color3" type="radio" value="red"></input><br>
+            复选框：
+            <input id="website" name="website" type="checkbox" value="/images/water.png"></input><br>
+
+            提交按钮：
+            <input id="ok" name="ok" type="submit" value="提交"></input>
+        </form>
+    </div>
+
+</body>
+</html>
