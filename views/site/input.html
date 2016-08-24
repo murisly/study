@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>input示例</title>
-    <base href="http://study.shenman.site" />
+    <base href="http://study.taotaole.local" />
 </head>
 <body bgcolor="#bbbbbb" text='#ffffff'>
     <center>
@@ -35,6 +35,11 @@
         <hr>
         <div>
             <form action="site/show" method="get">
+                <select id="pos" name="pos">
+                    <option value="one">one</option>
+                    <option value="two">two</option>
+                    <option value="three">three</option>
+                </select>
                 <label for="first">单行文本框：</label>
                 <input id="first" type="text" name="first">
                 <input id="ok" type="submit" name="ok" value="提交">
@@ -44,10 +49,47 @@
         <hr>
         <div>
             <form action="site/show" method="get">
-                <label for="first">单行文本框：</label>
-                <input id="first" type="text" name="first">
-                <button type="submit"><b>提交</b></button>
+                <label for="first">单行文本框1：</label>
+                <input id="first" type="text" name="first" required/><br>
+                <label for="second">单行文本框2：</label>
+                <input id="second" type="number" name="second" min="10" max="100" />
+                <button type="submit"><b>提交</b></button><br>
                 <button type="submit"><img src="/images/hehua.jpg" alt="提交" title="提交1"></button>
+            </form>
+        </div>
+
+        <hr>
+        <div>
+            <form action="site/show" method="post">
+                <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
+                <input id="first" type="text" name="first">
+               <!--  <textarea id="describe" name="describe"></textarea> -->
+                <input id="ok" type="submit" name="ok" value="提交">
+            </form>
+        </div>
+
+        <hr>
+        <div>
+            <div>
+                <input id="first" name="first" type="text" form="out">
+            </div>
+            <div>
+                <form id="out">
+                    <input id="second" name="second" type="text">
+                    <input id="ok" name="ok" type="submit" value="注册" formaction="site/show" formmethod="get">
+                    <input id="ok" name="ok" type="submit" value="修改" formaction="site/show" formmethod="post">
+                </form>
+            </div>
+        </div>
+
+        <hr>
+        <div>
+            <form id="other" action="site/show" method="get">
+                颜色选择：<input id="color" name="color" type="color"><br>
+                日期选择：<input id="date" name="date" type="date"><br>
+                时间选择: <input id="time" name="time" type="time"><br>
+                UTC时间：<input id="utc" name="utc" type="datetime"><br>
+                <input id="ok" name="ok" type="submit" value="提交"><br>
             </form>
         </div>
     </div>
