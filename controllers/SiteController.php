@@ -169,4 +169,8 @@ class SiteController extends Controller
     public function actionFile() {
         return $this->renderPartial('file.html');
     }
+
+    public function actionCanvas() {
+        return $this->renderPartial('canvas.html');
+    }
 }
