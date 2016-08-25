@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\common\helper\MathTest;
 use app\common\helper\SetTest;
 use app\models\Country;
 use Yii;
@@ -138,39 +139,48 @@ class SiteController extends Controller
             ]);
     }
 
+    public function actionLearn() {
+//        require("/common/helper/MathTest.php");
+//        $math = new MathTest();
+//        $result = $math->add(3, 5);
+        return $this->render('learn', [
+            'result' => __DIR__,
+        ]);
+    }
+
     public function actionImage() {
-        return $this->renderPartial("image.html");
+        return $this->renderPartial("html/image.html");
     }
 
     public function actionLink() {
-        return $this->renderPartial("link.html");
+        return $this->renderPartial("html/link.html");
     }
 
     public function actionFont() {
-        return $this->renderPartial("font.html");
+        return $this->renderPartial("html/font.html");
     }
 
     public function actionInput() {
-        return $this->renderPartial("input.html");
+        return $this->renderPartial("html/input.html");
     }
 
     public function actionJs() {
-        return $this->renderPartial('js.html');
+        return $this->renderPartial('html/js.html');
     }
 
     public function actionTable() {
-        return $this->renderPartial('table.html');
+        return $this->renderPartial('html/table.html');
     }
 
     public function actionForm() {
-        return $this->renderPartial('form.html');
+        return $this->renderPartial('html/form.html');
     }
 
     public function actionFile() {
-        return $this->renderPartial('file.html');
+        return $this->renderPartial('html/file.html');
     }
 
     public function actionCanvas() {
-        return $this->renderPartial('canvas.html');
+        return $this->renderPartial('html/canvas.html');
     }
 }
