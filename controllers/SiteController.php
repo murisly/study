@@ -140,11 +140,21 @@ class SiteController extends Controller
     }
 
     public function actionLearn() {
-//        require("/common/helper/MathTest.php");
-//        $math = new MathTest();
-//        $result = $math->add(3, 5);
+        $path = __DIR__."/../common/helper/MathTest.php";
+        $math = new MathTest();
+        $result = $math->add(3, 123);
         return $this->render('learn', [
-            'result' => __DIR__,
+            'path' => $path,
+            'result' => $result,
+        ]);
+    }
+
+    public function actionConstant() {
+        return $this->render('constant', [
+            'dir' => __DIR__,
+            'method' => __METHOD__,
+            'file' => __FILE__,
+            'class' => __CLASS__,
         ]);
     }
 

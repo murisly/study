@@ -15,3 +15,13 @@ class MathTest
         return $a + $b;
     }
 }
+
+function sub($a, $b) {
+    return $a - $b;
+}
+
+return sub(4, 5);
+
+//echo "math test";
+//$math = new MathTest();
+//return $math->add(1, 6);

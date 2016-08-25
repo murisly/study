@@ -10,5 +10,6 @@ use yii\helpers\Html;
 ?>
 
 <div>
+    <?= $path ?><br>
     <?= $result ?>
 </div>
