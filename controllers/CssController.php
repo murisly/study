@@ -14,5 +14,9 @@ class CssController extends Controller
     public function actionOuter() {
         return $this->render('html/outer.html');
     }
+
+    public function actionInter() {
+        return $this->render('html/inter.html');
+    }
 }
 
