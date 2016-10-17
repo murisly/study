@@ -14,5 +14,6 @@ $this->title = 'My Study';
     <div><a href="http:\\study.shenman.site\site\js">js</a></div><br>
     <div><a href="http:\\study.shenman.site\site\table">table</a></div><br>
     <div><a href="http:\\study.shenman.site\site\canvas">绘图</a></div><br>
+    <div><a href="http:\\study.shenman.site\site\css">css样式</a></div><br>
     
 </div>
